@@ -1,11 +1,11 @@
-Project 0 Getting Started
+Project 0 - Getting Started
 ====================
 
 **University of Pennsylvania, CIS 565: GPU Programming and Architecture, Project 0**
 
 * John Marcao
   * [LinkedIn](https://www.linkedin.com/in/jmarcao/)
-* Tested on: Windows 10, i5-4690K @ 3.50GHz 8GB DDR3, RTX 2080 TI 3071MB (Personal)
+* Tested on: Windows 10, i5-4690K @ 3.50GHz, 8GB DDR3, RTX 2080 TI 3071MB (Personal)
 
 ## Overview
 This project is straight-forward: setup a CUDA development environment and explore some the capabilities of the debugger.
@@ -21,8 +21,10 @@ WebGL was not enabled by default under Chrome, so I had to enable it under the `
 The DXR-Config-Test folder contains a VS 2017 Project containing a DXR test utility. By building the and running the application and referring to the [README of the Microsoft Source](https://github.com/microsoft/DirectX-Graphics-Samples/blob/master/Samples/Desktop/D3D12Raytracing/src/D3D12RaytracingHelloWorld/readme.md) I was able to confirm that my machine was capable of using the DXR function. The first image below is the application with the default settings. The second image contains a modified image using the following change in D3D12RayTracingHelloWorld/Raytracing.hsl:72
 
 ```
+...
 //float3 barycentrics = float3(1 - attr.barycentrics.x - attr.barycentrics.y, attr.barycentrics.x, attr.barycentrics.y);
 float3 barycentrics = float3(0.1, 0.92, 0.1);
+...
 ```
 
 ![](images/dxr_example_default.JPG)
